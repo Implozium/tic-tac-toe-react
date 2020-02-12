@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+}
+.field__label {
+    width: 30%;
+}
+.field__input {
+    width: 40%;
+}
+.field__error {
+    color: red;
+    width: 30%;
+}
