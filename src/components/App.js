@@ -1,19 +1,10 @@
-import React, { Component } from "react";
-import Grid from './Grid';
-import GridU from './GridU';
+import React, { useState, useCallback } from "react";
+import Game from './Game';
 
-export default class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    render() {
-        return <div>
-            <Grid size={ 3 }></Grid>
-            <Grid size={ 4 }></Grid>
-            <Grid size={ 5 } length={ 4 }></Grid>
-            <GridU size={ 5 } length={ 4 }></GridU>
-        </div>;
-    }
+export default function App(props) {
+    return (
+        <div>
+            <Game size={ 5 } length={ 3 }></Game>
+        </div>
+    );
 }
